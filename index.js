@@ -12,12 +12,11 @@ function submitData(name,email){
     })
     .then((res)=>res.json())
     .then((data)=>{
-      document.body.innerHTML=data.id
+      document.body.innerHTML=data.id;
         
     })
     .catch((err)=>{
-        document.body.innerHTML=err.message
-      
+        document.body.innerHTML=err.message;      
     })
     return data;
 }
