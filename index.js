@@ -8,7 +8,9 @@ function submitData(name,email){
             "Content-Type":"application/json",
             Accept:"application/json"
         },
-        body:JSON.stringify({name,email})
+        body:JSON.stringify({
+            "name":name,                      
+            "email":email})
     })
     .then((res)=>res.json())
     .then((data)=>{
